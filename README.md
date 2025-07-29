@@ -20,12 +20,11 @@ Através dela, o usuário pode "digitar comandos" para consultar dados meteorol�
 
 ## 👥 Integrantes e Funções
 
-| Nome do Integrante       | Função no Projeto                              |
-| ------------------------ | ---------------------------------------------- |
+| Nome do Integrante                                                        | Função no Projeto                              |
+| ------------------------------------------------------------------------- | ---------------------------------------------- |
 | `Andreza da Conceição, Sabrina Bochenek, Marivania Boeno e Jessica Bento` | Lógica de JavaScript e Integração com API      |
-| `Camila Zotti, Isadora Vieira e Geraldo George ` | Estrutura da página (HTML) e Estilização (CSS) |
-| `Henrique Porto` | Gerenciamento do GitHub e Fluxo de Trabalho    |
-
+| `Camila Zotti, Isadora Vieira e Geraldo George `                          | Estrutura da página (HTML) e Estilização (CSS) |
+| `Henrique Porto`                                                          | Gerenciamento do GitHub e Fluxo de Trabalho    |
 
 ---
 
@@ -64,6 +63,8 @@ Para visualizar o site, basta seguir um dos métodos abaixo:
 ## 📚 Guia de Git e GitHub para Colaboradores
 
 Este guia prático serve para alinhar o uso do Git e GitHub em nosso projeto.
+
+> **Nota**: Este guia segue um modelo de **repositório compartilhado**, onde todos os colaboradores têm acesso de escrita ao repositório principal. Para contribuições externas, o modelo de **Fork e Pull Request** é o mais recomendado.
 
 ### 1. Configuração Inicial (Apenas uma vez)
 
@@ -114,7 +115,47 @@ Envie sua branch para o repositório remoto no GitHub.
 git push -u origin feature/adicionar-login
 ```
 
-### 5. Resolvendo Conflitos de Merge
+### 5. Criando um Pull Request (PR) para Revisão
+
+Depois de enviar suas alterações com `git push`, o próximo passo é pedir para que o time revise seu código. Isso é feito através de um **Pull Request (PR)**.
+
+**Passo 1: Encontre o Link no Terminal**
+
+Logo após o `git push`, o terminal mostrará uma mensagem com um link para criar o Pull Request. É a maneira mais fácil de começar.
+
+```
+... (outras mensagens do git)
+remote: Create a pull request for 'feature/teste2' on GitHub by visiting:
+remote:   https://github.com/henrique151/cli-consulta-meteorologica/pull/new/feature/teste2
+```
+
+**Passo 2: Crie o Pull Request**
+
+1.  **Clique no link** que apareceu no seu terminal. Ele te levará direto para a página de criação do PR no GitHub.
+
+2.  **Escreva um Título claro.** O título é a primeira coisa que o time verá.
+
+    - **Exemplo de um bom título:** `feat: Adiciona campo de busca de cidade na tela inicial`
+    - _Evite títulos vagos como "minhas alterações" ou "correção"._
+
+3.  **Escreva uma Descrição útil.** Explique o que você fez e por quê. Não precisa ser um texto longo, mas deve ajudar os outros a entenderem a mudança.
+
+    - **Exemplo de uma boa descrição:**
+
+      ```
+      Adicionei a funcionalidade de busca de cidade na página principal.
+
+      - Criei o input de texto no HTML.
+      - Adicionei o CSS para estilizar o campo.
+      - O botão "Buscar" agora chama a API com a cidade digitada.
+      ```
+
+
+4.  **Clique em "Create pull request".**
+
+Pronto! Agora é só aguardar o feedback do time. Eles podem aprovar ou pedir ajustes no seu código.
+
+### 6. Resolvendo Conflitos de Merge
 
 Conflitos acontecem quando duas pessoas alteram a mesma linha de um arquivo. Se o GitHub acusar um conflito, siga estes passos:
 
@@ -131,13 +172,11 @@ Conflitos acontecem quando duas pessoas alteram a mesma linha de um arquivo. Se 
     git push
     ```
 
-### 6. Criando um Pull Request (PR)
+### 🚀 Dicas Extras
 
-1.  Vá para a página do repositório no GitHub.
-2.  Clique em "Compare & pull request".
-3.  Escreva um título e uma descrição clara para o seu PR.
-4.  Marque os outros integrantes como "reviewers" (revisores).
-5.  Aguarde a aprovação. Após aprovado e testado, o PR poderá ser "merged" (incorporado) na branch `main`.
+- Use `git status` com frequência para ver o que está acontecendo.
+- Em caso de erro, leia com atenção a mensagem do Git.
+- Nomeie bem as branches, ex: `feature/cadastro-usuario`, `bugfix/login`
 
 ### 7. Comandos Rápidos e Úteis
 
