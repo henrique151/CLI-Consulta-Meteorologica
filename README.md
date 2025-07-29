@@ -20,11 +20,12 @@ Através dela, o usuário pode "digitar comandos" para consultar dados meteorol�
 
 ## 👥 Integrantes e Funções
 
-| Nome do Integrante | Função no Projeto |
-| ------------------ | ------------------------------------------------ |
-| `[Nome do Integrante 1]` | Lógica de JavaScript e Integração com API |
-| `[Nome do Integrante 2]` | Estrutura da página (HTML) e Estilização (CSS) |
-| `[Nome do Integrante 3]` | Documentação e Testes de Usabilidade |
+| Nome do Integrante       | Função no Projeto                              |
+| ------------------------ | ---------------------------------------------- |
+| `Andreza da Conceição, Sabrina Bochenek, Marivania Boeno e Jessica Bento` | Lógica de JavaScript e Integração com API      |
+| `Camila Zotti, Isadora Vieira e Geraldo George ` | Estrutura da página (HTML) e Estilização (CSS) |
+| `Henrique Porto` | Gerenciamento do GitHub e Fluxo de Trabalho    |
+
 
 ---
 
@@ -42,7 +43,7 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 ### Passo 1: Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/cli-consulta-meteorologica.git
+git clone https://github.com/henrique151/cli-consulta-meteorologica.git
 cd cli-consulta-meteorologica
 ```
 
@@ -78,12 +79,14 @@ git config --global user.email "seuemail@exemplo.com"
 Nunca trabalhe diretamente na branch `main`. Sempre crie uma nova branch para cada funcionalidade ou correção.
 
 Primeiro, garanta que sua `main` local está atualizada:
+
 ```bash
 git checkout main
 git pull origin main
 ```
 
 Agora, crie sua nova branch e mude para ela:
+
 ```bash
 # Exemplo: criando uma feature de login
 git checkout -b feature/adicionar-login
@@ -120,7 +123,7 @@ Conflitos acontecem quando duas pessoas alteram a mesma linha de um arquivo. Se 
     git pull origin main
     ```
 2.  **Abra os arquivos com conflito:** O Git marcará as áreas problemáticas com `<<<<<<<`, `=======`, e `>>>>>>>`.
-3.  **Edite os arquivos:** Apague as marcações do Git e decida qual código deve permanecer (o seu, o da `main`, ou uma mistura dos dois).
+3.  **Edoite os arquivs:** Apague as marcações do Git e decida qual código deve permanecer (o seu, o da `main`, ou uma mistura dos dois).
 4.  **Salve as correções:**
     ```bash
     git add .
@@ -138,13 +141,13 @@ Conflitos acontecem quando duas pessoas alteram a mesma linha de um arquivo. Se 
 
 ### 7. Comandos Rápidos e Úteis
 
-| Comando | Descrição |
-| -------------------- | ------------------------------------------------- |
-| `git status` | Vê o status dos arquivos (modificados, novos, etc.). |
-| `git branch` | Lista todas as branches e mostra a atual. |
-| `git checkout <nome>` | Muda para outra branch. |
-| `git pull origin main` | Atualiza sua branch atual com a `main`. |
-| `git log` | Mostra o histórico de commits. |
+| Comando                | Descrição                                            |
+| ---------------------- | ---------------------------------------------------- |
+| `git status`           | Vê o status dos arquivos (modificados, novos, etc.). |
+| `git branch`           | Lista todas as branches e mostra a atual.            |
+| `git checkout <nome>`  | Muda para outra branch.                              |
+| `git pull origin main` | Atualiza sua branch atual com a `main`.              |
+| `git log`              | Mostra o histórico de commits.                       |
 
 ---
 
