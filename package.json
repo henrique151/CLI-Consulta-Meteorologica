@@ -1,0 +1,25 @@
+{
+  "name": "cli-consulta-meteorologica",
+  "version": "1.0.0",
+  "description": "> Projeto de estudo desenvolvido para o programa **Desenvolve** do **Grupo Boticário**.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrique151/CLI-Consulta-Meteorologica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrique151/CLI-Consulta-Meteorologica/issues"
+  },
+  "homepage": "https://github.com/henrique151/CLI-Consulta-Meteorologica#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
