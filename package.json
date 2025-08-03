@@ -1,0 +1,13 @@
+{
+  "name": "cli-consulta-meteorologica",
+  "version": "1.0.0",
+  "description": "> Projeto de estudo desenvolvido para o programa **Desenvolve** do **Grupo Boticário**.",
+  "main": "apiWeather.js",
+  "type": "module",
+  "scripts": {
+    "start": "apiWeather.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
