@@ -1,13 +1,24 @@
 {
-  "name": "cli-consulta-meteorologica",
+  "name": "cli-cep",
   "version": "1.0.0",
-  "description": "> Projeto de estudo desenvolvido para o programa **Desenvolve** do **Grupo Boticário**.",
-  "main": "apiWeather.js",
+  "description": "",
+  "main": "cep.js",
   "type": "module",
   "scripts": {
-    "start": "apiWeather.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrique151/CLI-Consulta-Meteorologica.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrique151/CLI-Consulta-Meteorologica/issues"
+  },
+  "homepage": "https://github.com/henrique151/CLI-Consulta-Meteorologica#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
