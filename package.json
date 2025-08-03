@@ -1,9 +1,8 @@
 {
-  "name": "cli-cep",
+  "name": "cli-consulta-meteorologica",
   "version": "1.0.0",
-  "description": "",
-  "main": "cep.js",
-  "type": "module",
+  "description": "> Projeto de estudo desenvolvido para o programa **Desenvolve** do **Grupo Boticário**.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/henrique151/CLI-Consulta-Meteorologica#readme",
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "dotenv": "^17.2.1",
+    "node-fetch": "^2.7.0"
   }
 }
