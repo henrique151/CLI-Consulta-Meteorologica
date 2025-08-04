@@ -35,6 +35,7 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 ### Pré-requisitos
 
 - Git
+- Node.js instalado (https://nodejs.org)
 - Navegador Web (Chrome, Firefox, etc.)
 - Editor de Código (ex: VS Code)
 - Chave de API de um serviço de clima (ex: OpenWeatherMap, WeatherAPI)
@@ -48,7 +49,41 @@ cd cli-consulta-meteorologica
 
 ### Passo 2: Instalar Dependências
 
-Este projeto utiliza apenas HTML, CSS e JavaScript puros e não requer a instalação de dependências externas.
+Este projeto utiliza o pacote dotenv para carregar variáveis de ambiente. Instale as dependências com:
+
+```bash
+npm install
+```
+
+### Passo 3: Configurar o arquivo `.env`
+
+Crie um arquivo `.env` na raiz do projeto com sua chave de API, por exemplo:
+
+```
+API_KEY=sua_chave_api_aqui
+```
+
+### Passo 4: Executar os Scripts
+
+- Para rodar o script que consulta o CEP:
+
+```bash
+node ./cep.js
+```
+
+Após executar, abrirá um terminal onde você poderá digitar o CEP.
+
+- Para rodar o script que consulta o clima a partir do CEP:
+
+```bash
+node ./apiWeather.js 08050150
+```
+
+(Substitua `08050150` pelo CEP desejado — deve ser um número com 8 dígitos, sem hífen.)
+
+---
+
+<!-- Este projeto utiliza apenas HTML, CSS e JavaScript puros e não requer a instalação de dependências externas.
 
 ### Passo 3: Executar o Programa
 
@@ -57,6 +92,7 @@ Para visualizar o site, basta seguir um dos métodos abaixo:
 1.  **Método Simples**: Encontre o arquivo `index.html` na pasta do projeto e abra-o diretamente no seu navegador de preferência.
 
 2.  **Método Recomendado (com Live Server)**: Se você usa o VS Code, instale a extensão Live Server. Depois, clique com o botão direito no arquivo `index.html` e selecione `Open with Live Server`. Isso iniciará um servidor local e recarregará a página automaticamente sempre que você salvar uma alteração.
+-->
 
 ---
 
@@ -150,7 +186,6 @@ remote:   https://github.com/henrique151/cli-consulta-meteorologica/pull/new/fea
       - O botão "Buscar" agora chama a API com a cidade digitada.
       ```
 
-
 4.  **Clique em "Create pull request".**
 
 Pronto! Agora é só aguardar o feedback do time. Eles podem aprovar ou pedir ajustes no seu código.
@@ -171,6 +206,26 @@ Conflitos acontecem quando duas pessoas alteram a mesma linha de um arquivo. Se 
     git commit -m "fix: Resolve conflitos de merge com a main"
     git push
     ```
+
+## ⚠️ Nota Importante sobre o Git e Mensagem de Commit no Merge
+
+Quando você executar um `git pull` e houver conflitos ou o Git precisar fazer um merge, pode abrir uma tela de texto padrão do Git (geralmente o **Vim**). Essa tela serve para você confirmar ou editar a mensagem de commit do merge.
+
+**O que está acontecendo:**
+
+Você executou um `git pull`, e como havia alterações remotas e locais, o Git está fazendo um merge. Agora ele quer que você confirme ou edite a mensagem de commit.
+
+**O que você pode fazer:**
+
+- Para aceitar a mensagem padrão e continuar, siga estes passos:
+
+1. Pressione a tecla `Esc` para sair do modo de edição.
+2. Digite `:wq` (write e quit — salvar e sair).
+3. Pressione `Enter`.
+
+Isso vai salvar a mensagem de commit e finalizar o merge.
+
+---
 
 ### 🚀 Dicas Extras
 
