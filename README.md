@@ -49,11 +49,19 @@ cd cli-consulta-meteorologica
 
 ### Passo 2: Instalar Dependências
 
-Este projeto utiliza o pacote dotenv para carregar variáveis de ambiente. Instale as dependências com:
+Este projeto utiliza o pacote `dotenv` para carregar variáveis de ambiente. Instale as dependências com:
 
 ```bash
 npm install
 ```
+
+> 💡 **Observação:** Caso apareça um erro relacionado ao `dotenv` após a instalação, execute manualmente:
+
+```bash
+npm install dotenv
+```
+
+---
 
 ### Passo 3: Configurar o arquivo `.env`
 
