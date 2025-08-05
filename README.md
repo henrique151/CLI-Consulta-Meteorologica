@@ -1,4 +1,4 @@
-# 🌦️ Site de Consulta Meteorológica
+# 🌦️ CLI de Consulta Meteorológica
 
 > Projeto de estudo desenvolvido para o programa **Desenvolve** do **Grupo Boticário**.
 
@@ -6,25 +6,24 @@
 
 ## 📝 Descrição
 
-Este projeto é um site (aplicação web) desenvolvido como um exercício prático para o programa **Desenvolve do Grupo Boticário**. O objetivo é criar uma interface web que **simula a aparência e a interação de um terminal de linha de comando (CLI)**.
+Este projeto é uma **ferramenta de linha de comando (CLI)** desenvolvida como um exercício prático para o programa **Desenvolve do Grupo Boticário**. O objetivo é permitir que o usuário consulte dados de CEP e informações meteorológicas diretamente do seu terminal.
 
-Através dela, o usuário pode "digitar comandos" para consultar dados meteorológicos, aplicando conceitos de desenvolvimento web, manipulação do DOM com JavaScript e consumo de APIs.
+A aplicação utiliza Node.js para executar scripts que interagem com APIs externas para buscar e exibir os dados solicitados.
 
 ## ✨ Funcionalidades Principais
 
-- **Interface Estilo Terminal**: Simula a aparência de um console para uma experiência de usuário única.
-- **Interação por Comandos**: O usuário consulta o clima digitando comandos (ex: `weather sao paulo`).
-- **Validação de Comandos**: O sistema valida se o comando e a cidade foram inseridos corretamente.
-- **Integração com API**: Conecta-se a uma API de clima para buscar dados atualizados.
-- **Exibição Dinâmica de Resultados**: Mostra a temperatura como se fosse a saída de um comando no terminal.
+- **Consulta de Endereço por CEP**: Script interativo (`cep.js`) que solicita um CEP e retorna o endereço correspondente.
+- **Consulta de Clima por CEP**: Script (`apiWeather.js`) que recebe um CEP como argumento, busca a cidade correspondente e exibe a condição climática atual.
+- **Validação de Entrada**: Garante que o CEP fornecido seja válido (formato de 8 dígitos numéricos).
+- **Integração com Múltiplas APIs**: Utiliza a API ViaCEP para geolocalização e a OpenWeatherMap para dados meteorológicos.
+- **Uso de Variáveis de Ambiente**: Configuração segura da chave de API através de um arquivo `.env`.
 
 ## 👥 Integrantes e Funções
 
-| Nome do Integrante                                                        | Função no Projeto                              |
-| ------------------------------------------------------------------------- | ---------------------------------------------- |
-| `Andreza da Conceição, Sabrina Bochenek, Marivania Boeno e Jessica Bento` | Lógica de JavaScript e Integração com API      |
-| `Camila Zotti, Isadora Vieira e Geraldo George `                          | Estrutura da página (HTML) e Estilização (CSS) |
-| `Henrique Porto`                                                          | Gerenciamento do GitHub e Fluxo de Trabalho    |
+| Nome do Integrante                                                                                                       | Função no Projeto                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Andreza da Conceição, Sabrina Bochenek, Marivania Boeno, Camila Zotti, Isadora Vieira e Geraldo George e Jessica Bento` | Desenvolvimento dos scripts CLI em Node.js. Criação da lógica para consulta interativa de CEP (`cep.js`) e da funcionalidade de busca de clima encadeando as APIs ViaCEP e OpenWeatherMap (`apiWeather.js`). |
+| `Henrique Porto`                                                                                                         | Gerenciamento do GitHub e Fluxo de Trabalho                                                                                                                                                                  |
 
 ---
 
@@ -36,7 +35,6 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 
 - Git
 - Node.js instalado (https://nodejs.org)
-- Navegador Web (Chrome, Firefox, etc.)
 - Editor de Código (ex: VS Code)
 - Chave de API de um serviço de clima (ex: OpenWeatherMap, WeatherAPI)
 
@@ -65,11 +63,13 @@ npm install dotenv
 
 ### Passo 3: Configurar o arquivo `.env`
 
-Crie um arquivo `.env` na raiz do projeto com sua chave de API, por exemplo:
+Crie um arquivo `.env` na raiz do projeto com sua chave da API, exatamente como está abaixo:
 
 ```
 API_KEY=sua_chave_api_aqui
 ```
+
+---
 
 ### Passo 4: Executar os Scripts
 
@@ -88,19 +88,6 @@ node ./apiWeather.js 08050150
 ```
 
 (Substitua `08050150` pelo CEP desejado — deve ser um número com 8 dígitos, sem hífen.)
-
----
-
-<!-- Este projeto utiliza apenas HTML, CSS e JavaScript puros e não requer a instalação de dependências externas.
-
-### Passo 3: Executar o Programa
-
-Para visualizar o site, basta seguir um dos métodos abaixo:
-
-1.  **Método Simples**: Encontre o arquivo `index.html` na pasta do projeto e abra-o diretamente no seu navegador de preferência.
-
-2.  **Método Recomendado (com Live Server)**: Se você usa o VS Code, instale a extensão Live Server. Depois, clique com o botão direito no arquivo `index.html` e selecione `Open with Live Server`. Isso iniciará um servidor local e recarregará a página automaticamente sempre que você salvar uma alteração.
--->
 
 ---
 
